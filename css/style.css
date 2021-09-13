@@ -286,7 +286,9 @@ a:hover {
 a.active {
     color: #425BB5;
 }
-
+a.email {
+    color:#87ceeb ;
+}
 
 /* home section
 ==================================================*/
@@ -357,7 +359,9 @@ a.active {
     left: 50px;
     z-index: 1
 }
-
+#about p {
+    cursor:default;
+}
 
 
 
@@ -490,7 +494,50 @@ a.active {
 #skill  {
     padding: 100px 0;
     background: #f3f3f3
+}
+#skill ul {
+    list-style: none;
+}
+#skill ul li {
+    float:left;
+    /* margin-right:20px; */
+    width:calc(100% / 3);
+    text-align:center;
+    margin-top:50px;
+}
+#skill ul li:last-child {
+    margin-right:0;
+}
 
+#skill .chart {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+  }
+#skill .chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+#skill .percent {
+    display: block;
+    line-height: 150px;
+    text-align: center;
+    width:150px;
+    z-index: 2;
+    font-size:20px;
+    font-weight:600;
+  }
+#skill .percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
+}
+#skill p.class {
+    font-size:18px
 }
 
 /* projects section
@@ -684,20 +731,27 @@ a.active {
     background-color:#f3f3f3 ;
 }
 #contact .intro {
-    margin:50px 0 100px 0;
+    margin-bottom:30px;
 }
-#contact .intro p {
+#contact .intro p.c_txt {
+    margin-left:-16px;
+    font-weight:700;
+    font-size:18px;
+    line-height:1.7;
+}
+#contact .intro p.c_tit {
     font-weight:800;
     font-size:48px;
     line-height: 1.5;
+    color:#444;
+    margin-top:-30px;
+    text-align:right;
 }
-#contact .email {
-    margin-left:10px;
+
+#contact .link:first-child a{
+    margin-left:0;
 }
-#contact .email a {
-    color:#333;
-}
-#contact .email a:hover {
+#contact .link a:hover {
     color:#425BB5;
 }
 /* 
