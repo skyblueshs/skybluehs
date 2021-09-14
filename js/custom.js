@@ -110,59 +110,58 @@ $(document).ready(function () {
     // Contact Form 	
 
     // validate contact form
-    $(function () {
-        $('#contact-form').validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                email: {
-                    required: true
-                },
-                phone: {
-                    required: false
-                },
-                message: {
-                    required: true
-                }
+    //     $(function () {
+    //         $('#contact-form').validate({
+    //             rules: {
+    //                 name: {
+    //                     required: true,
+    //                     minlength: 2
+    //                 },
+    //                 email: {
+    //                     required: true
+    //                 },
+    //                 phone: {
+    //                     required: false
+    //                 },
+    //                 message: {
+    //                     required: true
+    //                 }
 
-            },
-            messages: {
-                name: {
-                    required: "This field is required",
-                    minlength: "your name must consist of at least 2 characters"
-                },
-                email: {
-                    required: "This field is required"
-                },
-                message: {
-                    required: "This field is required"
-                }
-            },
-            submitHandler: function (form) {
-                $(form).ajaxSubmit({
-                    type: "POST",
-                    data: $(form).serialize(),
-                    url: "process.php",
-                    success: function () {
-                        $('#contact :input').attr('disabled', 'disabled');
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor', 'default');
-                            $('#success').fadeIn();
-                        });
-                    },
-                    error: function () {
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $('#error').fadeIn();
-                        });
-                    }
-                });
-            }
-        });
-
-    });
+    //             },
+    //             messages: {
+    //                 name: {
+    //                     required: "This field is required",
+    //                     minlength: "your name must consist of at least 2 characters"
+    //                 },
+    //                 email: {
+    //                     required: "This field is required"
+    //                 },
+    //                 message: {
+    //                     required: "This field is required"
+    //                 }
+    //             },
+    //             submitHandler: function (form) {
+    //                 $(form).ajaxSubmit({
+    //                     type: "POST",
+    //                     data: $(form).serialize(),
+    //                     url: "process.php",
+    //                     success: function () {
+    //                         $('#contact :input').attr('disabled', 'disabled');
+    //                         $('#contact').fadeTo("slow", 1, function () {
+    //                             $(this).find(':input').attr('disabled', 'disabled');
+    //                             $(this).find('label').css('cursor', 'default');
+    //                             $('#success').fadeIn();
+    //                         });
+    //                     },
+    //                     error: function () {
+    //                         $('#contact').fadeTo("slow", 1, function () {
+    //                             $('#error').fadeIn();
+    //                         });
+    //                     }
+    //                 });
+    //             }
+    //         });
+    //     });
 });
 // easypiechart
 $(document).ready(function(){

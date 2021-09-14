@@ -43,6 +43,7 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 80px;
     line-height: 70px;
+    cursor: default;
 }
 
 h4 {
@@ -53,7 +54,8 @@ h4 {
     color: #425BB5;
     margin-left: 50px;
     font-weight: 700;
-    font-size:18px
+    font-size:18px;
+    cursor:default
 }
 
 h4:before {
@@ -537,7 +539,8 @@ a.email {
     font-size: .8em;
 }
 #skill p.class {
-    font-size:18px
+    font-size:18px;
+    cursor: default;
 }
 
 /* projects section
@@ -577,10 +580,6 @@ a.email {
     padding: 0px 20px;
     color: white;
     text-decoration: none;
-}
-
-.portfolio_filter {
-    padding-left: 0;
 }
 
 .portfolio_item {
@@ -673,7 +672,9 @@ a.email {
     margin: 0 auto;
     text-align: center;
 }
-
+.portfolio_filter li:hover a {
+    color:#425BB5;
+}
 .portfolio_item img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -738,6 +739,7 @@ a.email {
     font-weight:700;
     font-size:18px;
     line-height:1.7;
+    cursor: default;
 }
 #contact .intro p.c_tit {
     font-weight:800;
@@ -746,8 +748,11 @@ a.email {
     color:#444;
     margin-top:-30px;
     text-align:right;
+    cursor: default;
 }
-
+#contact .link span {
+    cursor: default;
+}
 #contact .link:first-child a{
     margin-left:0;
 }
