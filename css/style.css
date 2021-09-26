@@ -242,6 +242,11 @@ nav {
 nav p.logo {
     transform: translateY(-2px);
     display: inline-block;
+    transform: rotateZ(0deg);
+    transition: all 1.5s;
+}
+nav p.logo:hover {
+    transform: rotateZ(270deg);
 }
 nav ul {
     display: inline-block;
