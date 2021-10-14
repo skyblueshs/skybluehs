@@ -682,8 +682,8 @@ a.email {
     color:#425BB5;
 }
 .portfolio_item img {
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
 }
 
 .portfolio-padding {
