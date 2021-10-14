@@ -38,6 +38,7 @@ font-family: 'Open Sans', sans-serif;
 ==================================================*/
 img {
     image-rendering: -webkit-optimize-contrast;
+    width:100%;
 }
 h1 {
     font-family: 'Playfair Display', serif;
@@ -84,8 +85,20 @@ body {
     line-height: 50px
 }
 
+.h-10 {
+    height: 10px;
+}
+
+.h-20 {
+    height: 20px;
+}
+
 .h-50 {
     height: 50px;
+}
+
+.h-70 {
+    height: 70px;
 }
 
 
@@ -702,7 +715,6 @@ a.email {
 
 .popup-modal {
     background: #fff;
-    /* display: none; */
 }
 
 .close-popup-modal {
@@ -720,6 +732,8 @@ a.email {
     right: 14px;
 }
 
+
+
 .animatedModal01-on .close-popup-modal,
 .animatedModal02-on .close-popup-modal,
 .animatedModal03-on .close-popup-modal, 
@@ -736,17 +750,29 @@ a.email {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     line-height: 70px;
+    letter-spacing: 3px;
+}
+.modal-content h2 span {
+    letter-spacing:0.5px;
 }
 .modal-content a {
     color:inherit;
+    font-size:16px;
 }
 .modal-content a:hover {
     color:#425BB5;
 }
 .modal-content a > i {
     margin-left:5px;
-    font-size:16px;
+    /* font-size:16px; */
 }
+
+.modal-content h5 {
+    font-weight:bold;
+    font-size:18px;
+    letter-spacing: 3px;
+}
+
 
 /* contact
 ==================================================*/
