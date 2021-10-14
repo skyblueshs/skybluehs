@@ -101,12 +101,41 @@ $(document).ready(function () {
             });
             return false;
         });
-
     });
 
     //animatedModal
-    $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
+    $("#demo01").animatedModal();
+    $("#demo02").animatedModal();
+    $("#demo03").animatedModal();
+    $("#demo04").animatedModal();
+    $("#demo05").animatedModal();
+    $("#demo06").animatedModal();
+    $("#demo07").animatedModal();
+    $("#demo08").animatedModal();
+    $("#demo09").animatedModal();
 
+    // easypiechart
+    $(window).scroll(function(){
+        if($('#chart').hasClass('aos-animate') == true){
+            $('.chart').easyPieChart({
+                easing: 'easeOutBounce',
+                barColor: '#87ceeb',
+                trackColor: '#fff',
+                scaleColor: '#ccc',
+                lineCap: 'butt',
+                lineWidth: 20,
+                size: 150,
+                animate: 1300,
+                onStart: $.noop,
+                onStop: $.noop,
+                onStep: function(from, to, percent) {
+                $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
+        }
+    });
+    
+    
     // Contact Form 	
 
     // validate contact form
@@ -162,26 +191,5 @@ $(document).ready(function () {
     //             }
     //         });
     //     });
-});
-// easypiechart
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if($('#chart').hasClass('aos-animate') == true){
-            $('.chart').easyPieChart({
-                easing: 'easeOutBounce',
-                barColor: '#87ceeb',
-                trackColor: '#fff',
-                scaleColor: '#ccc',
-                lineCap: 'butt',
-                lineWidth: 20,
-                size: 150,
-                animate: 1300,
-                onStart: $.noop,
-                onStop: $.noop,
-                onStep: function(from, to, percent) {
-                $(this.el).find('.percent').text(Math.round(percent));
-              }
-            });
-        }
-    });
+    
 });

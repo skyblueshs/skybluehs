@@ -681,8 +681,8 @@ a.email {
     color:#425BB5;
 }
 .portfolio_item img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
 }
 
 .portfolio-padding {
@@ -701,6 +701,7 @@ a.email {
 
 .popup-modal {
     background: #fff;
+    /* display: none; */
 }
 
 .close-popup-modal {
@@ -718,16 +719,23 @@ a.email {
     right: 14px;
 }
 
-.animatedModal-on .close-popup-modal {
+.animatedModal01-on .close-popup-modal,
+.animatedModal02-on .close-popup-modal,
+.animatedModal03-on .close-popup-modal, 
+.animatedModal04-on .close-popup-modal, 
+.animatedModal05-on .close-popup-modal, 
+.animatedModal06-on .close-popup-modal, 
+.animatedModal07-on .close-popup-modal, 
+.animatedModal08-on .close-popup-modal, 
+.animatedModal09-on .close-popup-modal {
     opacity: 1;
 }
 
 .modal-content h2 {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 70px;
 }
-
 
 /* contact
 ==================================================*/
