@@ -577,6 +577,7 @@ a.email {
 
 .portfolio .categories-grid .categories ul li a:hover,
 .portfolio .categories-grid .categories ul li a:focus {
+    color:#425BB5;
     text-decoration: none;
 }
 
@@ -736,6 +737,16 @@ a.email {
     font-size: 40px;
     line-height: 70px;
 }
+.modal-content a {
+    color:inherit;
+}
+.modal-content a:hover {
+    color:#425BB5;
+}
+.modal-content a > i {
+    margin-left:5px;
+    font-size:16px;
+}
 
 /* contact
 ==================================================*/
@@ -769,8 +780,15 @@ a.email {
 #contact .link:first-child a{
     margin-left:0;
 }
+#contact .link a {
+    color:inherit;
+}
 #contact .link a:hover {
     color:#425BB5;
+}
+#contact .link a > i {
+    margin-left:5px;
+    font-size:16px;
 }
 /* 
 #contact-form input,
