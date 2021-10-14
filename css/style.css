@@ -747,13 +747,13 @@ a.email {
 }
 
 .modal-content h2 {
-    font-family: 'Playfair Display', serif;
+    font-family:'Open Sans', sans-serif;
     font-size: 40px;
     line-height: 70px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .modal-content h2 span {
-    letter-spacing:0.5px;
+    letter-spacing:-1px;
 }
 .modal-content a {
     color:inherit;
