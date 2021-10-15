@@ -38,7 +38,6 @@ font-family: 'Open Sans', sans-serif;
 ==================================================*/
 img {
     image-rendering: -webkit-optimize-contrast;
-    width:100%;
 }
 h1 {
     font-family: 'Playfair Display', serif;
@@ -773,6 +772,9 @@ a.email {
     letter-spacing: 3px;
 }
 
+.modal-content img {
+    width:100%;
+}
 
 /* contact
 ==================================================*/
