@@ -761,9 +761,15 @@ a.email {
 .modal-content a:hover {
     color:#425BB5;
 }
-.modal-content a > i {
+/* .modal-content a > i {
+    font-size: 20px;
+    margin-top:2px;
+} */
+.modal-content a > i:first-child {
+    margin-right:5px;
+}
+.modal-content a > i:last-child {
     margin-left:5px;
-    /* font-size:16px; */
 }
 
 .modal-content h5 {
