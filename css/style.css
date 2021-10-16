@@ -740,10 +740,10 @@ a.email {
 .animatedModal05-on .close-popup-modal, 
 .animatedModal06-on .close-popup-modal, 
 .animatedModal07-on .close-popup-modal, 
-.animatedModal08-on .close-popup-modal, 
-.animatedModal09-on .close-popup-modal {
-    opacity: 1;
-}
+.animatedModal08-on .close-popup-modal
+    {
+        opacity: 1;
+    }
 
 .modal-content h2 {
     font-family:'Open Sans', sans-serif;
@@ -781,7 +781,7 @@ a.email {
 .modal-content img {
     width:100%;
 }
-#animatedModal05 img {
+#animatedModal05 img, #animatedModal07 img {
     width:auto;
 }
 #animatedModal05 i {

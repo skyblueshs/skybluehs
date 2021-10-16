@@ -112,7 +112,6 @@ $(document).ready(function () {
     $("#demo06").animatedModal();
     $("#demo07").animatedModal();
     $("#demo08").animatedModal();
-    $("#demo09").animatedModal();
 
     // easypiechart
     $(window).scroll(function(){
