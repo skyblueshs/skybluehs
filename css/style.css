@@ -721,11 +721,11 @@ a.email {
     margin: 20px;
     font-size: 30px;
     cursor: pointer;
-    /* opacity: 0;
+    opacity: 0;
     -webkit-transition: all .3s;
     transition: all .3s;
     -webkit-transition-delay: .6s;
-    transition-delay: .6s; */
+    transition-delay: .6s;
     position: fixed;
     z-index: 100000;
     top:20px;
