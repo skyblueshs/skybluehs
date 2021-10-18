@@ -737,6 +737,11 @@ a.email {
     top:100px;
     right:38px;
     z-index: 100000;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-transition-delay: .6s;
+    transition-delay: .6s;
 }
 .btn-modal-link ul {
     list-style: none;
@@ -775,6 +780,17 @@ a.email {
 .animatedModal06-on .close-popup-modal, 
 .animatedModal07-on .close-popup-modal, 
 .animatedModal08-on .close-popup-modal
+    {
+        opacity: 1;
+    }
+.animatedModal01-on .btn-modal-link,
+.animatedModal02-on .btn-modal-link,
+.animatedModal03-on .btn-modal-link, 
+.animatedModal04-on .btn-modal-link, 
+.animatedModal05-on .btn-modal-link, 
+.animatedModal06-on .btn-modal-link, 
+.animatedModal07-on .btn-modal-link, 
+.animatedModal08-on .btn-modal-link
     {
         opacity: 1;
     }
