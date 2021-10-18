@@ -719,7 +719,7 @@ a.email {
 .close-popup-modal {
     float: right;
     margin: 20px;
-    font-size: 22px;
+    font-size: 30px;
     opacity: 0;
     cursor: pointer;
     -webkit-transition: all .3s;
@@ -728,9 +728,38 @@ a.email {
     transition-delay: .6s;
     position: fixed;
     z-index: 100000;
-    right: 14px;
+    top:20px;
+    right: 40px;
 }
-
+.btn-modal-link {
+    position:fixed;
+    top:100px;
+    right:38px;
+    z-index: 100000;
+}
+.btn-modal-link ul {
+    list-style: none;
+}
+.btn-modal-link li {
+    text-align: center;
+    margin-bottom:20px;
+}
+.btn-modal-link li a img {
+    width:30px;
+    margin-bottom:5px;
+    transition: all 0.7s;
+    transform:rotateY(0deg);
+}
+.btn-modal-link li:hover a img {
+    /* opacity: 0.7; */
+    transform:rotateY(360deg);
+}
+.btn-modal-link li a p {
+    color:#333;
+}
+.btn-modal-link li:hover a p {
+    color:#425BB5;
+}
 
 
 .animatedModal01-on .close-popup-modal,
