@@ -742,6 +742,7 @@ a.email {
     transition: all .3s;
     -webkit-transition-delay: .6s;
     transition-delay: .6s;
+    background-color: #fff;
 }
 .btn-modal-link ul {
     list-style: none;

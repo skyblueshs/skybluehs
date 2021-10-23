@@ -104,14 +104,167 @@ $(document).ready(function () {
     });
 
     //animatedModal
-    $("#demo01").animatedModal();
-    $("#demo02").animatedModal();
-    $("#demo03").animatedModal();
-    $("#demo04").animatedModal();
-    $("#demo05").animatedModal();
-    $("#demo06").animatedModal();
-    $("#demo07").animatedModal();
-    $("#demo08").animatedModal();
+    $("#demo01").animatedModal({
+        animatedIn: 'bounceInLeft',
+        animatedOut: 'bounceOutLeft',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+              if (index == children.length) return;
+              children.eq(index++).show().velocity("transition.expandIn", {
+                opacity: 1,
+                stagger: 250
+              });
+              window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+    $("#demo02").animatedModal({
+        animatedIn: 'bounceInUp',
+        animatedOut: 'bounceOutDown',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+              if (index == children.length) return;
+              children.eq(index++).show().velocity("transition.expandIn", {
+                opacity: 1,
+                stagger: 250
+              });
+              window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+    $("#demo03").animatedModal({
+        animatedIn: 'bounceInRight',
+        animatedOut: 'bounceOutRight',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+              if (index == children.length) return;
+              children.eq(index++).show().velocity("transition.expandIn", {
+                opacity: 1,
+                stagger: 250
+              });
+              window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+    $("#demo04").animatedModal({
+        animatedIn: 'bounceInLeft',
+        animatedOut: 'bounceOutLeft',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+              if (index == children.length) return;
+              children.eq(index++).show().velocity("transition.expandIn", {
+                opacity: 1,
+                stagger: 250
+              });
+              window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+
+    });
+    $("#demo05").animatedModal({
+        animatedIn: 'bounceInUp',
+        animatedOut: 'bounceOutDown',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+              if (index == children.length) return;
+              children.eq(index++).show().velocity("transition.expandIn", {
+                opacity: 1,
+                stagger: 250
+              });
+              window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+    $("#demo06").animatedModal({
+        animatedIn: 'bounceInRight',
+        animatedOut: 'bounceOutRight',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+              if (index == children.length) return;
+              children.eq(index++).show().velocity("transition.expandIn", {
+                opacity: 1,
+                stagger: 250
+              });
+              window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+    $("#demo07").animatedModal({
+        animatedIn: 'bounceInLeft',
+        animatedOut: 'bounceOutLeft',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+              if (index == children.length) return;
+              children.eq(index++).show().velocity("transition.expandIn", {
+                opacity: 1,
+                stagger: 250
+              });
+              window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+    $("#demo08").animatedModal({
+        animatedIn: 'bounceInUp',
+        animatedOut: 'bounceOutDown',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+              if (index == children.length) return;
+              children.eq(index++).show().velocity("transition.expandIn", {
+                opacity: 1,
+                stagger: 250
+              });
+              window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
     
     // easypiechart
     $(window).scroll(function(){
