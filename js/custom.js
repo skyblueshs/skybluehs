@@ -104,128 +104,10 @@ $(document).ready(function () {
     });
 
     //animatedModal
-    $("#demo01").animatedModal({
-        animatedIn: 'bounceInLeft',
-        animatedOut: 'bounceOutLeft',
-        beforeOpen: function() {
-            var children = $(".thumb");
-            var index = 0;
-            function addClassNextChild() {
-              if (index == children.length) return;
-              children.eq(index++).show().velocity("transition.expandIn", {
-                opacity: 1,
-                stagger: 250
-              });
-              window.setTimeout(addClassNextChild, 200);
-            }
-            addClassNextChild();
-        },
-        afterClose: function() {
-            $(".thumb").hide();
-        }
-    });
-    $("#demo02").animatedModal({
-        animatedIn: 'bounceInUp',
-        animatedOut: 'bounceOutDown',
-        beforeOpen: function() {
-            var children = $(".thumb");
-            var index = 0;
-            function addClassNextChild() {
-              if (index == children.length) return;
-              children.eq(index++).show().velocity("transition.expandIn", {
-                opacity: 1,
-                stagger: 250
-              });
-              window.setTimeout(addClassNextChild, 200);
-            }
-            addClassNextChild();
-        },
-        afterClose: function() {
-            $(".thumb").hide();
-        }
-    });
-    $("#demo03").animatedModal({
-        animatedIn: 'bounceInRight',
-        animatedOut: 'bounceOutRight',
-        beforeOpen: function() {
-            var children = $(".thumb");
-            var index = 0;
-            function addClassNextChild() {
-              if (index == children.length) return;
-              children.eq(index++).show().velocity("transition.expandIn", {
-                opacity: 1,
-                stagger: 250
-              });
-              window.setTimeout(addClassNextChild, 200);
-            }
-            addClassNextChild();
-        },
-        afterClose: function() {
-            $(".thumb").hide();
-        }
-    });
-    $("#demo04").animatedModal({
-        animatedIn: 'bounceInLeft',
-        animatedOut: 'bounceOutLeft',
-        beforeOpen: function() {
-            var children = $(".thumb");
-            var index = 0;
-            function addClassNextChild() {
-              if (index == children.length) return;
-              children.eq(index++).show().velocity("transition.expandIn", {
-                opacity: 1,
-                stagger: 250
-              });
-              window.setTimeout(addClassNextChild, 200);
-            }
-            addClassNextChild();
-        },
-        afterClose: function() {
-            $(".thumb").hide();
-        }
 
-    });
-    $("#demo05").animatedModal({
-        animatedIn: 'bounceInUp',
-        animatedOut: 'bounceOutDown',
-        beforeOpen: function() {
-            var children = $(".thumb");
-            var index = 0;
-            function addClassNextChild() {
-              if (index == children.length) return;
-              children.eq(index++).show().velocity("transition.expandIn", {
-                opacity: 1,
-                stagger: 250
-              });
-              window.setTimeout(addClassNextChild, 200);
-            }
-            addClassNextChild();
-        },
-        afterClose: function() {
-            $(".thumb").hide();
-        }
-    });
-    $("#demo06").animatedModal({
-        animatedIn: 'bounceInRight',
-        animatedOut: 'bounceOutRight',
-        beforeOpen: function() {
-            var children = $(".thumb");
-            var index = 0;
-            function addClassNextChild() {
-              if (index == children.length) return;
-              children.eq(index++).show().velocity("transition.expandIn", {
-                opacity: 1,
-                stagger: 250
-              });
-              window.setTimeout(addClassNextChild, 200);
-            }
-            addClassNextChild();
-        },
-        afterClose: function() {
-            $(".thumb").hide();
-        }
-    });
-    $("#demo07").animatedModal({
+    //#demo01
+    $("#demo01").animatedModal({
+        animationDuration: '1s',
         animatedIn: 'bounceInLeft',
         animatedOut: 'bounceOutLeft',
         beforeOpen: function() {
@@ -245,7 +127,148 @@ $(document).ready(function () {
             $(".thumb").hide();
         }
     });
+
+    //#demo02
+    $("#demo02").animatedModal({
+        animationDuration: '1s',
+        animatedIn: 'bounceInUp',
+        animatedOut: 'bounceOutDown',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.expandIn", {
+                    opacity: 1,
+                    stagger: 250
+                });
+                window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+
+    //#demo03
+    $("#demo03").animatedModal({
+        animationDuration: '1s',
+        animatedIn: 'bounceInRight',
+        animatedOut: 'bounceOutRight',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.expandIn", {
+                    opacity: 1,
+                    stagger: 250
+                });
+                window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+    
+    //#demo04
+    $("#demo04").animatedModal({
+        animationDuration: '1s',
+        animatedIn: 'bounceInLeft',
+        animatedOut: 'bounceOutLeft',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.expandIn", {
+                    opacity: 1,
+                    stagger: 250
+                });
+                window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+    
+    //#demo05
+    $("#demo05").animatedModal({
+        animationDuration: '1s',
+        animatedIn: 'bounceInUp',
+        animatedOut: 'bounceOutDown',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.expandIn", {
+                    opacity: 1,
+                    stagger: 250
+                });
+                window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+    
+    //#demo06
+    $("#demo06").animatedModal({
+        animationDuration: '1s',
+        animatedIn: 'bounceInRight',
+        animatedOut: 'bounceOutRight',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.expandIn", {
+                    opacity: 1,
+                    stagger: 250
+                });
+                window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+    
+    //#demo07
+    $("#demo07").animatedModal({
+        animationDuration: '1s',
+        animatedIn: 'bounceInLeft',
+        animatedOut: 'bounceOutLeft',
+        beforeOpen: function() {
+            var children = $(".thumb");
+            var index = 0;
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.expandIn", {
+                    opacity: 1,
+                    stagger: 250
+                });
+                window.setTimeout(addClassNextChild, 200);
+            }
+            addClassNextChild();
+        },
+        afterClose: function() {
+            $(".thumb").hide();
+        }
+    });
+    
+    //#demo08
     $("#demo08").animatedModal({
+        animationDuration: '1s',
         animatedIn: 'bounceInUp',
         animatedOut: 'bounceOutDown',
         beforeOpen: function() {
