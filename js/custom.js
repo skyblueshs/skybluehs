@@ -131,8 +131,6 @@ $(document).ready(function () {
     //#demo02
     $("#demo02").animatedModal({
         animationDuration: '1s',
-        animatedIn: 'bounceInUp',
-        animatedOut: 'bounceOutDown',
         beforeOpen: function() {
             var children = $(".thumb");
             var index = 0;
@@ -200,8 +198,6 @@ $(document).ready(function () {
     //#demo05
     $("#demo05").animatedModal({
         animationDuration: '1s',
-        animatedIn: 'bounceInUp',
-        animatedOut: 'bounceOutDown',
         beforeOpen: function() {
             var children = $(".thumb");
             var index = 0;
@@ -269,8 +265,6 @@ $(document).ready(function () {
     //#demo08
     $("#demo08").animatedModal({
         animationDuration: '1s',
-        animatedIn: 'bounceInUp',
-        animatedOut: 'bounceOutDown',
         beforeOpen: function() {
             var children = $(".thumb");
             var index = 0;
