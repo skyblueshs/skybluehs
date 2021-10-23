@@ -248,18 +248,22 @@ header {
     transition: all .5s;
     height: 65px;
 }
+
 nav {
     position:relative;
 }
+
 nav p.logo {
     transform: translateY(-2px);
     display: inline-block;
     transform: rotateZ(0deg);
     transition: all 1.5s;
 }
+
 nav p.logo:hover {
     transform: rotateZ(270deg);
 }
+
 nav ul {
     display: inline-block;
     padding-left: 0;
@@ -305,6 +309,7 @@ a:hover {
 a.active {
     color: #425BB5;
 }
+
 a.email {
     color:#87ceeb ;
 }
@@ -317,6 +322,7 @@ a.email {
     background-size: cover;
     height: 100vh;
 }
+
 #home h4 {
     font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
@@ -338,6 +344,7 @@ a.email {
     background: #425BB5;
     top: 20px;
 }
+
 .table-cell {
     display: table-cell;
     vertical-align: middle;
@@ -378,6 +385,7 @@ a.email {
     left: 50px;
     z-index: 1
 }
+
 #about p {
     cursor:default;
 }
@@ -514,9 +522,11 @@ a.email {
     padding: 100px 0;
     background: #f3f3f3
 }
+
 #skill ul {
     list-style: none;
 }
+
 #skill ul li {
     float:left;
     /* margin-right:20px; */
@@ -524,6 +534,7 @@ a.email {
     text-align:center;
     margin-top:50px;
 }
+
 #skill ul li:last-child {
     margin-right:0;
 }
@@ -535,12 +546,14 @@ a.email {
     height: 150px;
     /* margin-top: 50px;
     margin-bottom: 50px; */
-  }
+}
+
 #skill .chart canvas {
     position: absolute;
     top: 0;
     left: 0;
-  }
+}
+
 #skill .percent {
     display: block;
     line-height: 150px;
@@ -549,12 +562,14 @@ a.email {
     z-index: 2;
     font-size:20px;
     font-weight:600;
-  }
+}
+
 #skill .percent:after {
     content: '%';
     margin-left: 0.1em;
     font-size: .8em;
 }
+
 #skill p.class {
     font-size:18px;
     cursor: default;
@@ -744,31 +759,39 @@ a.email {
     transition-delay: .6s;
     background-color: #fff;
 }
+
 .btn-modal-link ul {
     list-style: none;
 }
+
 .btn-modal-link li {
     text-align: center;
     margin-bottom:20px;
 }
+
 .btn-modal-link li a {
     display:block;
 }
+
 .btn-modal-link li a img {
     width:30px;
     margin-bottom:5px;
     transition: all 0.7s;
     transform:rotateY(0deg);
 }
+
 .btn-modal-link li:hover a img {
     transform:rotateY(360deg);
 }
+
 .btn-modal-link li a p {
     color:#333;
 }
+
 .btn-modal-link li:hover a p {
     color:#425BB5;
 }
+
 #animatedModal08 .btn-modal-link {
     right:30px;
 }
@@ -784,6 +807,7 @@ a.email {
     {
         opacity: 1;
     }
+
 .animatedModal01-on .btn-modal-link,
 .animatedModal02-on .btn-modal-link,
 .animatedModal03-on .btn-modal-link, 
@@ -802,13 +826,16 @@ a.email {
     line-height: 70px;
     letter-spacing: 2px;
 }
+
 .modal-content h2 span {
     letter-spacing:-1px;
 }
+
 .modal-content a {
     color:inherit;
     font-size:16px;
 }
+
 .modal-content a:hover {
     color:#425BB5;
 }
@@ -822,13 +849,16 @@ a.email {
 .modal-content img {
     width:100%;
 }
+
 #animatedModal05 .modal-content img, #animatedModal07 .modal-content img {
     width:auto;
 }
-#animatedModal05 i {
+
+#animatedModal05 p > i.ion-play {
     padding : 0 10px;
 }
-#animatedModal05 .portfolio-padding > div:nth-child(2) {
+
+#animatedModal05 .portfolio-padding > div {
     margin-left:-100px
 }
 
@@ -839,9 +869,11 @@ a.email {
     padding: 100px 0;
     background-color:#f3f3f3 ;
 }
+
 #contact .intro {
     margin-bottom:30px;
 }
+
 #contact .intro p.c_txt {
     margin-left:-16px;
     font-weight:700;
@@ -849,6 +881,7 @@ a.email {
     line-height:1.7;
     cursor: default;
 }
+
 #contact .intro p.c_tit {
     font-weight:800;
     font-size:48px;
@@ -858,22 +891,28 @@ a.email {
     text-align:right;
     cursor: default;
 }
+
 #contact .link span {
     cursor: default;
 }
+
 #contact .link:first-child a{
     margin-left:0;
 }
+
 #contact .link a {
     color:inherit;
 }
+
 #contact .link a:hover {
     color:#425BB5;
 }
+
 #contact .link a > i {
     margin-left:5px;
     font-size:16px;
 }
+
 /* 
 #contact-form input,
 #contact-form textarea {
