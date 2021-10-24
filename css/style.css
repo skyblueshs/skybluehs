@@ -358,6 +358,7 @@ a.email {
     margin-left:15px;
     letter-spacing: 2px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    cursor: text;
 }
 
 .disply-table {
@@ -379,10 +380,10 @@ a.email {
 .about-border {
     position: absolute;
     border: 10px solid #425BB5;
-    width: 400px;
-    height: 400px;
-    top: 40px;
-    left: 50px;
+    width: 460px;
+    height: 688px;
+    top: -50px;
+    left: 110px;
     z-index: 1
 }
 
